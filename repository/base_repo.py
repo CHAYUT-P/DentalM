@@ -1,21 +1,16 @@
-import os
 import pickle
+import os
 
-class Repository:
-    """Base repository class for saving/loading objects using pickle."""
-    
-    def __init__(self, filename: str):
+class BaseRepository:
+    def __init__(self, filename):
         self.filename = filename
-        self.data = self.load()
 
-    def save(self):
-        """Save all current data to file."""
-        with open(self.filename, "wb") as f:
-            pickle.dump(self.data, f)
+    def save(self, data):
+        with open(self.filename, "wb") as file:
+            pickle.dump(data, file)
 
     def load(self):
-        """Load data from file (if it exists)."""
         if os.path.exists(self.filename):
-            with open(self.filename, "rb") as f:
-                return pickle.load(f)
+            with open(self.filename, "rb") as file:
+                return pickle.load(file)
         return []

@@ -1,16 +1,74 @@
-class Treatment:
-    prices = {
-        "Check-up": 50.00,
-        "Cleaning": 75.00,
-        "Filling": 120.00,
-        "Tooth Extraction": 150.00,
-        # ... add all your other treatments here
-    }
+# Define all dental treatments and their prices here
 
-    @classmethod
-    def get_price(cls, name):
-        return cls.prices.get(name, 0.0)
+DENTAL_TREATMENTS = [
+    "Check-up", "Cleaning", "Filling", "Tooth Extraction", "Root Canal Therapy",
+    "Dental Crown", "Dental Bridge", "Dentures (Full)", "Dentures (Partial)",
+    "Teeth Whitening", "Dental Veneers", "Dental Implants", "Orthodontics (Braces)",
+    "Invisalign", "Periodontal Therapy", "Scaling and Root Planing", "Gum Surgery",
+    "Fluoride Treatment", "Dental Sealants", "Oral Cancer Screening", "TMJ Therapy",
+    "Sleep Apnea Treatment", "Pediatric Dentistry", "Wisdom Tooth Extraction",
+    "Night Guard", "Sports Mouth Guard", "Cosmetic Bonding", "Porcelain Inlays and Onlays",
+    "Smile Makeover", "Full Mouth Reconstruction", "Laser Gum Contouring", "Orthodontic Retainers",
+    "Sedation Dentistry", "Oral Hygiene Education", "Occlusal Adjustment", "Dental X-rays",
+    "Sinus Lift", "Bone Grafting", "Apicoectomy", "Cavity Risk Assessment",
+    "Implant-Supported Dentures", "Gum Recession Treatment", "Preventive Resin Restorations",
+    "Teeth Polishing", "Lingual Braces", "Space Maintainers for Kids", "Frenectomy",
+    "Dental Emergencies", "Oral Biopsy", "Orthognathic Surgery Consultation", "Pulpotomy",
+    "Baby Tooth Capping", "Anxiety-Free Dentistry"
+]
 
-    @classmethod
-    def list_all(cls):
-        return list(cls.prices.keys())
+TREATMENT_PRICE = {
+    "Check-up": 50.00,
+    "Cleaning": 75.00,
+    "Filling": 120.00,
+    "Tooth Extraction": 150.00,
+    "Root Canal Therapy": 300.00,
+    "Dental Crown": 500.00,
+    "Dental Bridge": 600.00,
+    "Dentures (Full)": 1500.00,
+    "Dentures (Partial)": 750.00,
+    "Teeth Whitening": 400.00,
+    "Dental Veneers": 800.00,
+    "Dental Implants": 2000.00,
+    "Orthodontics (Braces)": 3500.00,
+    "Invisalign": 4500.00,
+    "Periodontal Therapy": 250.00,
+    "Scaling and Root Planing": 200.00,
+    "Gum Surgery": 500.00,
+    "Fluoride Treatment": 40.00,
+    "Dental Sealants": 60.00,
+    "Oral Cancer Screening": 100.00,
+    "TMJ Therapy": 300.00,
+    "Sleep Apnea Treatment": 1000.00,
+    "Pediatric Dentistry": 80.00,
+    "Wisdom Tooth Extraction": 250.00,
+    "Night Guard": 150.00,
+    "Sports Mouth Guard": 120.00,
+    "Cosmetic Bonding": 200.00,
+    "Porcelain Inlays and Onlays": 500.00,
+    "Smile Makeover": 5000.00,
+    "Full Mouth Reconstruction": 15000.00,
+    "Laser Gum Contouring": 400.00,
+    "Orthodontic Retainers": 250.00,
+    "Sedation Dentistry": 300.00,
+    "Oral Hygiene Education": 50.00,
+    "Occlusal Adjustment": 100.00,
+    "Dental X-rays": 50.00,
+    "Sinus Lift": 800.00,
+    "Bone Grafting": 1000.00,
+    "Apicoectomy": 700.00,
+    "Cavity Risk Assessment": 30.00,
+    "Implant-Supported Dentures": 2500.00,
+    "Gum Recession Treatment": 400.00,
+    "Preventive Resin Restorations": 100.00,
+    "Teeth Polishing": 70.00,
+    "Lingual Braces": 4000.00,
+    "Space Maintainers for Kids": 200.00,
+    "Frenectomy": 500.00,
+    "Dental Emergencies": 200.00,
+    "Oral Biopsy": 300.00,
+    "Orthognathic Surgery Consultation": 150.00,
+    "Pulpotomy": 250.00,
+    "Baby Tooth Capping": 200.00,
+    "Anxiety-Free Dentistry": 150.00
+}
