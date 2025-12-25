@@ -1,17 +1,35 @@
-📦 Installation
-Clone the repository
+## 📦 Installation
 
-Bash
+To run this application locally, follow these steps:
 
-git clone https://github.com/yourusername/dental-clinic-system.git
-cd dental-clinic-system
-Install dependencies Ensure you have Python installed, then run:
+1.  **Clone the repository**
+    ```bash
+    git clone [https://github.com/yourusername/dental-clinic-system.git](https://github.com/yourusername/dental-clinic-system.git)
+    cd dental-clinic-system
+    ```
 
-Bash
+2.  **Set up a virtual environment (Recommended)**
+    It is best practice to use a virtual environment to manage dependencies.
+    
+    * **Windows:**
+        ```bash
+        python -m venv venv
+        .\venv\Scripts\activate
+        ```
+    * **macOS / Linux:**
+        ```bash
+        python3 -m venv venv
+        source venv/bin/activate
+        ```
 
-pip install customtkinter tkcalendar Pillow
-Run the Application Execute the main entry point (create a main.py if you haven't already):
+3.  **Install dependencies**
+    Install the required libraries (`customtkinter`, `tkcalendar`, `Pillow`).
+    ```bash
+    pip install customtkinter tkcalendar Pillow
+    ```
 
-Bash
-
-python main.py
+4.  **Run the application**
+    Start the main program.
+    ```bash
+    python main.py
+    ```
